@@ -2,6 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import civilThumbnail from "../../Assets/Projects/civil.webp"
+import claimchainThumbnail from "../../Assets/Projects/claimchain.png"
+import hirechainThumbnail from "../../Assets/Projects/hirechain.webp"
+import kjscecanteenThumbnail from "../../Assets/Projects/kjsce-canteen.webp"
+import medicylThumbnail from "../../Assets/Projects/medicyl.png"
+import newsThumbnail from "../../Assets/Projects/news.webp"
+import ridexThumbnail from "../../Assets/Projects/ridex.png"
+import tipsplitThumbnail from "../../Assets/Projects/tipsplit.webp"
+import weatherThumbnail from "../../Assets/Projects/weather.webp"
+import notesThumbnail from "../../Assets/Projects/notes.webp"
 
 function Projects() {
   return (
@@ -12,22 +22,28 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on recently. &nbsp;
+          <a
+            href="https://github.com/priyamshah112"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#c770f0", textDecoration: "underline" }}
+          >
+             Github
+          </a> &nbsp;and&nbsp; 
+          <a
+            href="https://gitlab.com/Priyam112"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#c770f0", textDecoration: "underline" }}
+          >
+             Gitlab
+          </a> &nbsp;
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="/assets/hotanalytics.png"
-              isBlog={false}
-              title="Hotanalytics.ai"
-              description="An advanced analytics platform on GCP leveraging multi-LLM and ML models (e.g., Llama 3.1, Vertex AI) with a hybrid Knowledge Graph and RAG solution, achieving 83% query accuracy for enterprise-level data analysis."
-              ghLink="https://github.com/priyamshah112/hotanalytics"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/ridex.png"
+              imgPath={ridexThumbnail}
               isBlog={false}
               title="RideX"
               description="A decentralized ride-hailing app leveraging Express.js, Solidity, and IPFS for pricing transparency and user privacy in a blockchain environment."
@@ -37,47 +53,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="/assets/kjsce-canteen.png"
+              imgPath={kjscecanteenThumbnail}
               isBlog={false}
               title="KJSCE Canteen System"
               description="A distributed Golang REST microservice that automated order processing, optimizing kitchen workflows, and reducing customer wait times by 42%."
-              ghLink="https://github.com/priyamshah112/kjsce-canteen"
+              ghLink="https://apkpure.net/de/kjsce-canteen/com.canteenapp.canteen_app#google_vignette"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="/assets/mental-health-bot.png"
-              isBlog={false}
-              title="AI Mental Health Bot"
-              description="An AI-driven bot using OpenAI and Botpress for mental health support, automating lead qualification and boosting engagement by 42%."
-              ghLink="https://github.com/priyamshah112/mental-health-bot"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/analytics-alerts.png"
-              isBlog={false}
-              title="Analytics Alert System"
-              description="Automated critical campaign metric alerts and root-cause analysis for 700+ tracking sources, saving marketing analysts over 4 hours daily."
-              ghLink="https://github.com/priyamshah112/analytics-alerts"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/rust-transcription.png"
-              isBlog={false}
-              title="Asynchronous Transcription Service"
-              description="A high-performance Rust-based transcription service leveraging Redis Cluster, AlloyDB, and Kubernetes, achieving a 99.99% SLA."
-              ghLink="https://github.com/priyamshah112/transcription-service"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/claimchain.png"
+              imgPath={claimchainThumbnail}
               isBlog={false}
               title="ClaimChain"
               description="A blockchain-based family tree application ensuring data integrity and security."
@@ -87,17 +73,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="/assets/fakenews.png"
-              isBlog={false}
-              title="Fake-News Suspector"
-              description="A tool designed to detect and analyze fake news using machine learning techniques."
-              ghLink="https://github.com/priyamshah112/Fake-News-Suspector"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/medicyl.png"
+              imgPath={medicylThumbnail}
               isBlog={false}
               title="Medicyl"
               description="A blockchain-based decentralized health record management system, providing patients with better access and control over their medical records."
@@ -107,31 +83,61 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="/assets/billprint.png"
-              isBlog={false}
-              title="Bill-Print-Format"
-              description="An invoice format developed using HTML, CSS, and JavaScript, with a desktop version built on Electron.js for cross-platform compatibility."
-              ghLink="https://github.com/priyamshah112/Bill-Print-Format"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/decency.png"
-              isBlog={false}
-              title="Decency"
-              description="An open-source decency checker to analyze and sanitize text content using NLP techniques."
-              ghLink="https://github.com/priyamshah112/Decency"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath="/assets/hirechain.png"
+              imgPath={hirechainThumbnail}
               isBlog={false}
               title="HireChain"
               description="A platform facilitating global job placements and freelance work, ensuring fairness and security through smart contracts."
               ghLink="https://github.com/priyamshah112/HireChain"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={civilThumbnail}
+              isBlog={false}
+              title="Civil Advocacy App"
+              description="An app designed to empower users by providing easy access to advocacy tools and resources."
+              ghLink="https://github.com/priyamshah112/civil-advocacy-app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={newsThumbnail}
+              isBlog={false}
+              title="News App"
+              description="A real-time news aggregation app built to keep users updated with the latest headlines from various sources."
+              ghLink="https://github.com/priyamshah112/news-app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={weatherThumbnail}
+              isBlog={false}
+              title="Weather App"
+              description="A user-friendly weather forecasting app providing accurate and up-to-date weather information."
+              ghLink="https://github.com/priyamshah112/weather-app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={notesThumbnail}
+              isBlog={false}
+              title="Notes App"
+              description="A simple and efficient note-taking application to organize and manage your ideas."
+              ghLink="https://github.com/priyamshah112/notes-app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tipsplitThumbnail}
+              isBlog={false}
+              title="Tip Split App"
+              description="An app that helps users split tips among group members fairly and efficiently."
+              ghLink="https://github.com/priyamshah112/Tip-Split-App"
             />
           </Col>
         </Row>
